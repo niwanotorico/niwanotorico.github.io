@@ -3,166 +3,233 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CROCO | Multi Creator</title>
+  <title>ちきとぴよ | にわとり親子のほのぼの日常</title>
+  <meta name="description" content="にわとりの親ちきんと、ひよこのぴよきち・ぴよみが暮らす、やさしくて少しシュールな日常の箱庭世界。">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Navigation -->
   <nav class="navbar">
-    <div class="nav-logo">CROCO</div>
+    <a href="#" class="nav-logo">ちきとぴよ</a>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#works">Works</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#characters">かぞく</a></li>
+      <li><a href="#gallery">にちじょう</a></li>
+      <li><a href="#world">せかいかん</a></li>
+      <li><a href="#links">リンク</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Toggle menu">
+    <button class="nav-toggle" aria-label="メニュー">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero: おうちの入り口 -->
   <section class="hero">
+    <div class="hero-deco hero-deco--clouds">
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+    </div>
     <div class="hero-content">
-      <p class="hero-tag">Multi Creator</p>
-      <h1 class="hero-title">
-        <span class="gradient-text">Hello!</span><br>
-        I'm <span class="highlight">CROCO</span>
-      </h1>
-      <p class="hero-desc">映像 / デザイン / プログラミング<br>クリエイティブなものづくりが好きです</p>
-      <a href="#works" class="btn btn-primary">Works を見る</a>
+      <h1 class="hero-title">ちきとぴよ</h1>
+      <p class="hero-subtitle">にわとり親子の<br class="sp-only">ほのぼの日常</p>
+      <p class="hero-en">A cozy slice-of-life world about<br>a chicken mom and her chick kids.</p>
     </div>
-    <div class="hero-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-      <div class="shape shape-4"></div>
+    <div class="hero-characters">
+      <img src="images/ぴよきち.png" alt="ぴよきち" class="hero-char hero-char--piyokichi">
+      <img src="images/ちきん2.0.jpg" alt="ちきん" class="hero-char hero-char--chikin">
+      <img src="images/ぴよみ.png" alt="ぴよみ" class="hero-char hero-char--piyomi">
     </div>
+    <div class="hero-ground"></div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="section about">
+  <!-- Characters: かぞく紹介 -->
+  <section id="characters" class="section section--characters">
     <div class="container">
-      <h2 class="section-title"><span class="title-accent">About</span> Me</h2>
-      <div class="about-grid">
-        <div class="about-image">
-          <div class="about-image-placeholder">
-            <span>PHOTO</span>
+      <h2 class="section-title">
+        <span class="section-title__icon">&#x1F3E0;</span>
+        おうちのかぞく
+      </h2>
+
+      <div class="character-cards">
+        <!-- ちきん -->
+        <div class="character-card character-card--chikin">
+          <div class="character-card__image">
+            <img src="images/ちきん2.0.jpg" alt="ちきん">
+          </div>
+          <div class="character-card__info">
+            <h3 class="character-card__name">ちきん</h3>
+            <span class="character-card__role">おかあさん</span>
+            <p class="character-card__desc">
+              やさしくて、少しおつかれ気味。<br>
+              家族をいつも見守っている、にわとりのママ。<br>
+              ソファでうたた寝しがち。
+            </p>
           </div>
         </div>
-        <div class="about-text">
-          <p>はじめまして！マルチクリエイターのCROCOです。</p>
-          <p>映像制作を中心に、デザインやプログラミングなど幅広いクリエイティブ活動をしています。新しい技術や表現方法を学びながら、見る人の心に残る作品づくりを目指しています。</p>
-          <p>お仕事のご相談やコラボレーションのお誘い、お気軽にどうぞ！</p>
+
+        <!-- ぴよきち -->
+        <div class="character-card character-card--piyokichi">
+          <div class="character-card__image">
+            <img src="images/ぴよきち.png" alt="ぴよきち">
+          </div>
+          <div class="character-card__info">
+            <h3 class="character-card__name">ぴよきち</h3>
+            <span class="character-card__role">おにいちゃん</span>
+            <p class="character-card__desc">
+              元気いっぱいのひよこ。朝に強い。<br>
+              ゲームが好き。ハリー・ポッターに夢中。<br>
+              妹にちょっかい出しがち。でも仲良し。
+            </p>
+          </div>
+        </div>
+
+        <!-- ぴよみ -->
+        <div class="character-card character-card--piyomi">
+          <div class="character-card__image">
+            <img src="images/ぴよみ.png" alt="ぴよみ">
+          </div>
+          <div class="character-card__info">
+            <h3 class="character-card__name">ぴよみ</h3>
+            <span class="character-card__role">いもうと</span>
+            <p class="character-card__desc">
+              あどけなくて、マイペース。<br>
+              おえかきとブランコが好き。パントマイムの才能あり。<br>
+              ポテト系の食べものに目がない。
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Works Section -->
-  <section id="works" class="section works">
+  <!-- Gallery: にちじょうのひとコマ -->
+  <section id="gallery" class="section section--gallery">
     <div class="container">
-      <h2 class="section-title"><span class="title-accent">My</span> Works</h2>
-      <div class="works-grid">
-        <div class="work-card">
-          <div class="work-thumbnail" style="background: linear-gradient(135deg, #ff6b6b, #feca57);">
-            <span class="work-category">Video</span>
-          </div>
-          <h3>プロジェクト名 1</h3>
-          <p>映像作品の説明文をここに書きます</p>
+      <h2 class="section-title">
+        <span class="section-title__icon">&#x1F4F7;</span>
+        にちじょうのひとコマ
+      </h2>
+      <p class="section-lead">
+        おうちの中の、ちいさな出来事。
+      </p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/こたつ鍋.jpg" alt="こたつでお鍋" loading="lazy">
+          <div class="gallery-item__caption">こたつでお鍋</div>
         </div>
-        <div class="work-card">
-          <div class="work-thumbnail" style="background: linear-gradient(135deg, #48dbfb, #0abde3);">
-            <span class="work-category">Design</span>
-          </div>
-          <h3>プロジェクト名 2</h3>
-          <p>デザイン作品の説明文をここに書きます</p>
+        <div class="gallery-item">
+          <img src="images/朝ごはん.png" alt="あさごはん" loading="lazy">
+          <div class="gallery-item__caption">あさごはん</div>
         </div>
-        <div class="work-card">
-          <div class="work-thumbnail" style="background: linear-gradient(135deg, #ff9ff3, #f368e0);">
-            <span class="work-category">Code</span>
-          </div>
-          <h3>プロジェクト名 3</h3>
-          <p>プログラミング作品の説明文をここに書きます</p>
+        <div class="gallery-item gallery-item--manga">
+          <img src="images/ふろ01.png" alt="おふろ（前編）" loading="lazy">
+          <div class="gallery-item__caption">おふろ（前編）</div>
         </div>
-        <div class="work-card">
-          <div class="work-thumbnail" style="background: linear-gradient(135deg, #55efc4, #00b894);">
-            <span class="work-category">Video</span>
-          </div>
-          <h3>プロジェクト名 4</h3>
-          <p>映像作品の説明文をここに書きます</p>
+        <div class="gallery-item gallery-item--manga">
+          <img src="images/ふろ02.png" alt="おふろ（後編）" loading="lazy">
+          <div class="gallery-item__caption">おふろ（後編）</div>
         </div>
-        <div class="work-card">
-          <div class="work-thumbnail" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7);">
-            <span class="work-category">Design</span>
-          </div>
-          <h3>プロジェクト名 5</h3>
-          <p>デザイン作品の説明文をここに書きます</p>
+        <div class="gallery-item">
+          <img src="images/ピヨコと花火.png" alt="花火" loading="lazy">
+          <div class="gallery-item__caption">花火</div>
         </div>
-        <div class="work-card">
-          <div class="work-thumbnail" style="background: linear-gradient(135deg, #fdcb6e, #e17055);">
-            <span class="work-category">Code</span>
-          </div>
-          <h3>プロジェクト名 6</h3>
-          <p>プログラミング作品の説明文をここに書きます</p>
+        <div class="gallery-item">
+          <img src="images/柿.jpg" alt="おおきな柿" loading="lazy">
+          <div class="gallery-item__caption">おおきな柿</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/VR.jpg" alt="VRであそぶ" loading="lazy">
+          <div class="gallery-item__caption">VRであそぶ</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/カバン.jpg" alt="おでかけ" loading="lazy">
+          <div class="gallery-item__caption">おでかけ</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section skills">
+  <!-- World: せかいかん -->
+  <section id="world" class="section section--world">
     <div class="container">
-      <h2 class="section-title"><span class="title-accent">My</span> Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon">🎬</div>
-          <h3>映像制作</h3>
-          <p>企画・撮影・編集まで一貫して対応。YouTube動画やプロモーション映像など。</p>
+      <h2 class="section-title">
+        <span class="section-title__icon">&#x1F30D;</span>
+        せかいかん
+      </h2>
+
+      <div class="world-content">
+        <div class="world-text">
+          <p class="world-text__main">
+            「ちきとぴよ」は、にわとりの親<strong>ちきん</strong>と<br>
+            ひよこの子どもたち<strong>ぴよきち</strong>・<strong>ぴよみ</strong>が暮らす、<br>
+            やさしくて少しシュールな<span class="marker">日常の箱庭世界</span>です。
+          </p>
+          <p class="world-text__sub">
+            大きな冒険や派手なファンタジーではなく、<br>
+            家の中や身近な出来事の中にある、<br>
+            小さな笑い、ぬくもり、生活感、子どもらしさを大切にしています。
+          </p>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon">🎨</div>
-          <h3>デザイン</h3>
-          <p>グラフィックデザイン、ロゴ制作、サムネイル制作など。</p>
+
+        <div class="world-keywords">
+          <span class="keyword">ほのぼの</span>
+          <span class="keyword">かわいい</span>
+          <span class="keyword">ちょっとシュール</span>
+          <span class="keyword">家族の日常</span>
+          <span class="keyword">生活のユーモア</span>
+          <span class="keyword">子ども視点</span>
+          <span class="keyword">箱庭</span>
+          <span class="keyword">絵本</span>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon">💻</div>
-          <h3>プログラミング</h3>
-          <p>Web制作やツール開発。HTML/CSS/JavaScript など。</p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">✨</div>
-          <h3>その他</h3>
-          <p>新しいことに挑戦するのが好き。幅広いスキルで対応します。</p>
+
+        <div class="world-motifs">
+          <h3 class="world-motifs__title">よく出てくるもの</h3>
+          <div class="motifs-list">
+            <span>ソファ</span>
+            <span>こたつ</span>
+            <span>コロッケサンド</span>
+            <span>りんごジュース</span>
+            <span>おふろ</span>
+            <span>ゲーム</span>
+            <span>VR</span>
+            <span>おえかき</span>
+            <span>風船ガム</span>
+            <span>宿題</span>
+            <span>おやつ</span>
+            <span>ブランコ</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section contact">
+  <!-- Links -->
+  <section id="links" class="section section--links">
     <div class="container">
-      <h2 class="section-title"><span class="title-accent">Get in</span> Touch</h2>
-      <p class="contact-desc">お仕事のご依頼やご相談はお気軽にどうぞ！</p>
-      <div class="contact-links">
-        <a href="#" class="contact-btn">
-          <span class="contact-icon">✉</span>
-          Email
+      <h2 class="section-title">
+        <span class="section-title__icon">&#x1F517;</span>
+        リンク
+      </h2>
+      <div class="link-buttons">
+        <a href="#" class="link-btn">
+          <span class="link-btn__icon">&#x1F426;</span>
+          <span class="link-btn__text">X (Twitter)</span>
         </a>
-        <a href="#" class="contact-btn">
-          <span class="contact-icon">🐦</span>
-          X (Twitter)
+        <a href="#" class="link-btn">
+          <span class="link-btn__icon">&#x1F4FA;</span>
+          <span class="link-btn__text">YouTube</span>
         </a>
-        <a href="#" class="contact-btn">
-          <span class="contact-icon">📺</span>
-          YouTube
+        <a href="https://github.com/niwanotorico" class="link-btn" target="_blank" rel="noopener">
+          <span class="link-btn__icon">&#x1F419;</span>
+          <span class="link-btn__text">GitHub</span>
         </a>
-        <a href="#" class="contact-btn">
-          <span class="contact-icon">🐙</span>
-          GitHub
+        <a href="#" class="link-btn">
+          <span class="link-btn__icon">&#x2709;</span>
+          <span class="link-btn__text">おたより</span>
         </a>
       </div>
     </div>
@@ -170,7 +237,9 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2026 CROCO. All rights reserved.</p>
+    <img src="images/ぴよみ.png" alt="" class="footer-char" aria-hidden="true">
+    <p class="footer-text">&copy; 2026 ちきとぴよ / niwanotorico</p>
+    <p class="footer-sub">All characters and illustrations by niwanotorico.</p>
   </footer>
 
   <script src="script.js"></script>
