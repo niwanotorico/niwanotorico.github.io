@@ -18,6 +18,8 @@ navLinks.querySelectorAll('a').forEach(link => {
 // YouTube Background Video (Hero)
 // ==========================================
 const YT_VIDEO_ID = 'sLvXMDp2dSc';
+const TRIM_START = 2;   // 最初の2秒をカット
+const TRIM_END = 2;     // 最後の2秒をカット
 
 // Load YouTube IFrame API
 const tag = document.createElement('script');
@@ -25,6 +27,8 @@ tag.src = 'https://www.youtube.com/iframe_api';
 document.head.appendChild(tag);
 
 let ytPlayer;
+let videoDuration = 0;
+let trimTimer = null;
 
 window.onYouTubeIframeAPIReady = function () {
   ytPlayer = new YT.Player('ytplayer', {
@@ -35,28 +39,48 @@ window.onYouTubeIframeAPIReady = function () {
       controls: 0,
       showinfo: 0,
       rel: 0,
-      loop: 1,
-      playlist: YT_VIDEO_ID,   // loop requires playlist
+      loop: 0,              // 手動ループで前後カット
       modestbranding: 1,
-      iv_load_policy: 3,        // hide annotations
+      iv_load_policy: 3,
       disablekb: 1,
       fs: 0,
-      playsinline: 1
+      playsinline: 1,
+      start: TRIM_START
     },
     events: {
       onReady: function (e) {
         e.target.mute();
+        videoDuration = e.target.getDuration();
+        e.target.seekTo(TRIM_START, true);
         e.target.playVideo();
+        startTrimLoop();
       },
       onStateChange: function (e) {
-        // When video ends, restart (backup for loop)
+        if (e.data === YT.PlayerState.PLAYING) {
+          startTrimLoop();
+        }
         if (e.data === YT.PlayerState.ENDED) {
+          // 動画終了 → 先頭（+2秒）に戻してループ
+          e.target.seekTo(TRIM_START, true);
           e.target.playVideo();
         }
       }
     }
   });
 };
+
+function startTrimLoop() {
+  if (trimTimer) clearInterval(trimTimer);
+  trimTimer = setInterval(function () {
+    if (!ytPlayer || !ytPlayer.getCurrentTime) return;
+    const current = ytPlayer.getCurrentTime();
+    const endPoint = videoDuration - TRIM_END;
+    // 終了2秒前に達したら先頭+2秒に戻す
+    if (endPoint > 0 && current >= endPoint) {
+      ytPlayer.seekTo(TRIM_START, true);
+    }
+  }, 300);
+}
 
 // ==========================================
 // Scroll fade-in animations
