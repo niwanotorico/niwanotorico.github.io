@@ -83,10 +83,59 @@ function startTrimLoop() {
 }
 
 // ==========================================
+// Book Viewer (絵本ビューアー)
+// ==========================================
+const BOOK_PAGES = 26;
+let currentPage = 0;
+
+function openBook() {
+  currentPage = 0;
+  updateBookPage();
+  document.getElementById('bookViewer').classList.add('is-open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeBook() {
+  document.getElementById('bookViewer').classList.remove('is-open');
+  document.body.style.overflow = '';
+}
+
+function bookPrev() {
+  if (currentPage > 0) {
+    currentPage--;
+    updateBookPage();
+  }
+}
+
+function bookNext() {
+  if (currentPage < BOOK_PAGES - 1) {
+    currentPage++;
+    updateBookPage();
+  }
+}
+
+function updateBookPage() {
+  const pageNum = String(currentPage).padStart(2, '0');
+  document.getElementById('bookPage').src = 'images/book/' + pageNum + '.jpg';
+  document.getElementById('bookCounter').textContent = (currentPage + 1) + ' / ' + BOOK_PAGES;
+  document.getElementById('bookPrev').disabled = currentPage === 0;
+  document.getElementById('bookNext').disabled = currentPage === BOOK_PAGES - 1;
+}
+
+// キーボード操作
+document.addEventListener('keydown', function (e) {
+  const viewer = document.getElementById('bookViewer');
+  if (!viewer.classList.contains('is-open')) return;
+  if (e.key === 'ArrowLeft') bookPrev();
+  if (e.key === 'ArrowRight') bookNext();
+  if (e.key === 'Escape') closeBook();
+});
+
+// ==========================================
 // Scroll fade-in animations
 // ==========================================
 const fadeTargets = document.querySelectorAll(
-  '.character-card, .gallery-item, .world-text, .world-keywords, .world-motifs, .link-btn'
+  '.character-card, .gallery-item, .book-card, .world-text, .world-keywords, .world-motifs, .link-btn'
 );
 
 fadeTargets.forEach(el => el.classList.add('fade-in'));

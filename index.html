@@ -17,6 +17,7 @@
     <ul class="nav-links">
       <li><a href="#characters">かぞく</a></li>
       <li><a href="#gallery">にちじょう</a></li>
+      <li><a href="#story">おはなし</a></li>
       <li><a href="#world">せかいかん</a></li>
       <li><a href="#links">リンク</a></li>
     </ul>
@@ -103,6 +104,12 @@
           </div>
         </div>
       </div>
+
+      <!-- 親子の象徴カット -->
+      <div class="family-stamp">
+        <img src="images/LINE_stamp/24.png" alt="すぴ〜 おやすみ親子">
+      </div>
+
     </div>
   </section>
 
@@ -165,6 +172,54 @@
       </div>
     </div>
   </section>
+
+  <!-- Story: おはなし -->
+  <section id="story" class="section section--story">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-title__icon">&#x1F4D6;</span>
+        おはなし
+      </h2>
+      <p class="section-lead">
+        ちきとぴよの絵本がよめます。
+      </p>
+
+      <!-- 絵本カード -->
+      <div class="book-card" id="book-xmas">
+        <div class="book-card__cover">
+          <img src="images/book/00.jpg" alt="トリかぞくのクリスマス 表紙" loading="lazy">
+        </div>
+        <div class="book-card__info">
+          <h3 class="book-card__title">トリかぞくのクリスマス</h3>
+          <p class="book-card__meta">さく：ちきん with ちゃっぴー<br>え：ちきん with じぇみに</p>
+          <p class="book-card__desc">
+            クリスマスイブの夜、ちきとぴよのポストに届いた一通の手紙。<br>
+            「サンタ業務代行」のお仕事を引き受けた3人は、<br>
+            プレゼントを届けるため、雪の街へ飛び出します。
+          </p>
+          <button class="book-card__btn" onclick="openBook()">
+            よむ
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 絵本ビューアー（モーダル） -->
+  <div class="book-viewer" id="bookViewer">
+    <div class="book-viewer__header">
+      <span class="book-viewer__title">トリかぞくのクリスマス</span>
+      <button class="book-viewer__close" onclick="closeBook()">&times;</button>
+    </div>
+    <div class="book-viewer__body">
+      <button class="book-viewer__nav book-viewer__nav--prev" onclick="bookPrev()" id="bookPrev">&#x276E;</button>
+      <div class="book-viewer__page-wrap">
+        <img class="book-viewer__page" id="bookPage" src="images/book/00.jpg" alt="ページ">
+        <div class="book-viewer__counter" id="bookCounter">1 / 26</div>
+      </div>
+      <button class="book-viewer__nav book-viewer__nav--next" onclick="bookNext()" id="bookNext">&#x276F;</button>
+    </div>
+  </div>
 
   <!-- World: せかいかん -->
   <section id="world" class="section section--world">
