@@ -3,104 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ちきとぴよ | にわとり親子のほのぼの日常</title>
+  <title>ちきとぴよ 図鑑 | にわとり親子のほのぼの日常</title>
   <meta name="description" content="にわとりの親ちきんと、ひよこのぴよきち・ぴよみが暮らす、やさしくて少しシュールな日常の箱庭世界。">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Navigation -->
   <nav class="navbar">
-    <a href="#" class="nav-logo">ちきとぴよ</a>
+    <a href="#" class="nav-logo">&#x1F423; ちきとぴよ 図鑑</a>
     <ul class="nav-links">
-      <li><a href="#characters">かぞく</a></li>
-      <li><a href="#gallery">にちじょう</a></li>
-      <li><a href="#story">おはなし</a></li>
-      <li><a href="#world">せかいかん</a></li>
-      <li><a href="#links">リンク</a></li>
+      <li><a href="#characters" class="nav-chip nav-chip--active">かぞく</a></li>
+      <li><a href="#gallery" class="nav-chip">にちじょう</a></li>
+      <li><a href="#story" class="nav-chip">おはなし</a></li>
+      <li><a href="#world" class="nav-chip">せかいかん</a></li>
+      <li><a href="#links" class="nav-chip">おたより</a></li>
     </ul>
     <button class="nav-toggle" aria-label="メニュー">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
-  <!-- Hero: おうちの入り口 -->
+  <!-- Hero -->
   <section class="hero">
-    <!-- YouTube背景動画 -->
     <div class="hero-video-bg">
       <div id="ytplayer"></div>
     </div>
     <div class="hero-video-overlay"></div>
 
     <div class="hero-content">
-      <h1 class="hero-title">ちきとぴよ</h1>
-      <p class="hero-subtitle">にわとり親子の<br class="sp-only">ほのぼの日常</p>
-      <p class="hero-en">A cozy slice-of-life world about<br>a chicken mom and her chick kids.</p>
+      <p class="hero-tag">にわとり親子の ほのぼの日常</p>
+      <h1 class="hero-title">
+        ひよこ<span class="hero-title__and">と</span><br>
+        <span class="hero-title__accent">ちきとぴよ。</span>
+      </h1>
+      <p class="hero-desc">
+        ほのぼのして、ちょっとシュール。ちきとぴよ家族の日々を、<br class="pc-only">
+        キャラクターごとにのぞいてみよう。
+      </p>
+      <div class="hero-buttons">
+        <a href="#characters" class="btn btn--primary">&#x1F425; かぞくをみる</a>
+        <a href="#gallery" class="btn btn--secondary">にちじょうギャラリー</a>
+      </div>
     </div>
+
     <div class="hero-characters">
       <img src="images/hero-piyokichi.png" alt="ぴよきち" class="hero-char hero-char--piyokichi">
       <img src="images/hero-chikin.png" alt="ちきん" class="hero-char hero-char--chikin">
       <img src="images/hero-piyomi.png" alt="ぴよみ" class="hero-char hero-char--piyomi">
     </div>
-    <div class="hero-ground"></div>
   </section>
 
-  <!-- Characters: かぞく紹介 -->
+  <!-- Characters: かぞく図鑑 -->
   <section id="characters" class="section section--characters">
     <div class="container">
-      <h2 class="section-title">
-        <span class="section-title__icon">&#x1F3E0;</span>
-        おうちのかぞく
-      </h2>
+      <div class="section-header">
+        <span class="section-header__label">FAMILY</span>
+        <h2 class="section-header__title">おうちのかぞく</h2>
+      </div>
 
       <div class="character-cards">
         <!-- ちきん -->
-        <div class="character-card character-card--chikin">
-          <div class="character-card__image">
+        <div class="char-card">
+          <span class="char-card__number">01</span>
+          <div class="char-card__visual char-card__visual--chikin">
             <img src="images/chikin-profile.png" alt="ちきん">
           </div>
-          <div class="character-card__info">
-            <h3 class="character-card__name">ちきん</h3>
-            <span class="character-card__role">おかあさん</span>
-            <p class="character-card__desc">
-              やさしくて、少しおつかれ気味。<br>
-              家族をいつも見守っている、にわとりのママ。<br>
-              ソファでうたた寝しがち。
+          <div class="char-card__body">
+            <h3 class="char-card__name">ちきん</h3>
+            <span class="char-card__name-en">CHIKIN / おかあさん</span>
+            <p class="char-card__desc">
+              やさしくて、少しおつかれ気味。家族をいつも見守っている、にわとりのママ。ソファでうたた寝しがち。
             </p>
+            <div class="char-card__tags">
+              <span>すきなもの：ビール</span>
+              <span>くせ：うたた寝</span>
+            </div>
+            <div class="char-card__quote">「にわが、ちきゅう。」</div>
           </div>
         </div>
 
         <!-- ぴよきち -->
-        <div class="character-card character-card--piyokichi">
-          <div class="character-card__image">
+        <div class="char-card">
+          <span class="char-card__number">02</span>
+          <div class="char-card__visual char-card__visual--piyokichi">
             <img src="images/piyokichi-profile.png" alt="ぴよきち">
           </div>
-          <div class="character-card__info">
-            <h3 class="character-card__name">ぴよきち</h3>
-            <span class="character-card__role">おにいちゃん</span>
-            <p class="character-card__desc">
-              元気いっぱいのひよこ。朝に強い。<br>
-              ゲームが好き。ハリー・ポッターに夢中。<br>
-              妹にちょっかい出しがち。でも仲良し。
+          <div class="char-card__body">
+            <h3 class="char-card__name">ぴよきち</h3>
+            <span class="char-card__name-en">PIYOKICHI / おにいちゃん</span>
+            <p class="char-card__desc">
+              元気いっぱいのひよこ。朝に強い。ゲームが好き。ハリー・ポッターに夢中。妹にちょっかい出しがち。でも仲良し。
             </p>
+            <div class="char-card__tags">
+              <span>すきなもの：ゲーム</span>
+              <span>くせ：呪文をとなえる</span>
+            </div>
+            <div class="char-card__quote">「いっしょにたんけんしよ！」</div>
           </div>
         </div>
 
         <!-- ぴよみ -->
-        <div class="character-card character-card--piyomi">
-          <div class="character-card__image">
+        <div class="char-card">
+          <span class="char-card__number">03</span>
+          <div class="char-card__visual char-card__visual--piyomi">
             <img src="images/piyomi-profile.png" alt="ぴよみ">
           </div>
-          <div class="character-card__info">
-            <h3 class="character-card__name">ぴよみ</h3>
-            <span class="character-card__role">いもうと</span>
-            <p class="character-card__desc">
-              あどけなくて、マイペース。<br>
-              おえかきとブランコが好き。パントマイムの才能あり。<br>
-              ポテト系の食べものに目がない。
+          <div class="char-card__body">
+            <h3 class="char-card__name">ぴよみ</h3>
+            <span class="char-card__name-en">PIYOMI / いもうと</span>
+            <p class="char-card__desc">
+              あどけなくて、マイペース。おえかきとブランコが好き。パントマイムの才能あり。ポテト系の食べものに目がない。
             </p>
+            <div class="char-card__tags">
+              <span>すきなもの：ポテチ</span>
+              <span>くせ：パントマイム</span>
+            </div>
+            <div class="char-card__quote">「おねむい、まだ。」</div>
           </div>
         </div>
       </div>
@@ -109,20 +130,17 @@
       <div class="family-stamp">
         <img src="images/LINE_stamp/24.png" alt="すぴ〜 おやすみ親子">
       </div>
-
     </div>
   </section>
 
   <!-- Gallery: にちじょうのひとコマ -->
   <section id="gallery" class="section section--gallery">
     <div class="container">
-      <h2 class="section-title">
-        <span class="section-title__icon">&#x1F4F7;</span>
-        にちじょうのひとコマ
-      </h2>
-      <p class="section-lead">
-        おうちの中の、ちいさな出来事。
-      </p>
+      <div class="section-header">
+        <span class="section-header__label">DAILY LIFE</span>
+        <h2 class="section-header__title">にちじょうのひとコマ</h2>
+        <p class="section-header__sub">おうちの中の、ちいさな出来事。</p>
+      </div>
 
       <div class="gallery-grid">
         <div class="gallery-item">
@@ -176,15 +194,12 @@
   <!-- Story: おはなし -->
   <section id="story" class="section section--story">
     <div class="container">
-      <h2 class="section-title">
-        <span class="section-title__icon">&#x1F4D6;</span>
-        おはなし
-      </h2>
-      <p class="section-lead">
-        ちきとぴよの絵本がよめます。
-      </p>
+      <div class="section-header">
+        <span class="section-header__label">STORY</span>
+        <h2 class="section-header__title">おはなし</h2>
+        <p class="section-header__sub">ちきとぴよの絵本がよめます。</p>
+      </div>
 
-      <!-- 絵本カード -->
       <div class="book-card" id="book-xmas">
         <div class="book-card__cover">
           <img src="images/book/00.jpg" alt="トリかぞくのクリスマス 表紙" loading="lazy">
@@ -197,9 +212,7 @@
             「サンタ業務代行」のお仕事を引き受けた3人は、<br>
             プレゼントを届けるため、雪の街へ飛び出します。
           </p>
-          <button class="book-card__btn" onclick="openBook()">
-            よむ
-          </button>
+          <button class="btn btn--primary" onclick="openBook()">よむ</button>
         </div>
       </div>
     </div>
@@ -224,21 +237,21 @@
   <!-- World: せかいかん -->
   <section id="world" class="section section--world">
     <div class="container">
-      <h2 class="section-title">
-        <span class="section-title__icon">&#x1F30D;</span>
-        せかいかん
-      </h2>
+      <div class="section-header">
+        <span class="section-header__label">WORLD</span>
+        <h2 class="section-header__title">せかいかん</h2>
+      </div>
 
       <div class="world-content">
         <div class="world-text">
           <p class="world-text__main">
-            「ちきとぴよ」は、にわとりの親<strong>ちきん</strong>と<br>
-            ひよこの子どもたち<strong>ぴよきち</strong>・<strong>ぴよみ</strong>が暮らす、<br>
+            「ちきとぴよ」は、にわとりの親<strong>ちきん</strong>と
+            ひよこの子どもたち<strong>ぴよきち</strong>・<strong>ぴよみ</strong>が暮らす、
             やさしくて少しシュールな<span class="marker">日常の箱庭世界</span>です。
           </p>
           <p class="world-text__sub">
-            大きな冒険や派手なファンタジーではなく、<br>
-            家の中や身近な出来事の中にある、<br>
+            大きな冒険や派手なファンタジーではなく、
+            家の中や身近な出来事の中にある、
             小さな笑い、ぬくもり、生活感、子どもらしさを大切にしています。
           </p>
         </div>
@@ -257,18 +270,10 @@
         <div class="world-motifs">
           <h3 class="world-motifs__title">よく出てくるもの</h3>
           <div class="motifs-list">
-            <span>ソファ</span>
-            <span>こたつ</span>
-            <span>コロッケサンド</span>
-            <span>りんごジュース</span>
-            <span>おふろ</span>
-            <span>ゲーム</span>
-            <span>VR</span>
-            <span>おえかき</span>
-            <span>風船ガム</span>
-            <span>宿題</span>
-            <span>おやつ</span>
-            <span>ブランコ</span>
+            <span>ソファ</span><span>こたつ</span><span>コロッケサンド</span>
+            <span>りんごジュース</span><span>おふろ</span><span>ゲーム</span>
+            <span>VR</span><span>おえかき</span><span>風船ガム</span>
+            <span>宿題</span><span>おやつ</span><span>ブランコ</span>
           </div>
         </div>
       </div>
@@ -278,34 +283,23 @@
   <!-- Links -->
   <section id="links" class="section section--links">
     <div class="container">
-      <h2 class="section-title">
-        <span class="section-title__icon">&#x1F517;</span>
-        リンク
-      </h2>
+      <div class="section-header">
+        <span class="section-header__label">LINKS</span>
+        <h2 class="section-header__title">おたより</h2>
+        <p class="section-header__sub">お仕事のご依頼やご相談はお気軽にどうぞ！</p>
+      </div>
       <div class="link-buttons">
-        <a href="#" class="link-btn">
-          <span class="link-btn__icon">&#x1F426;</span>
-          <span class="link-btn__text">X (Twitter)</span>
-        </a>
-        <a href="#" class="link-btn">
-          <span class="link-btn__icon">&#x1F4FA;</span>
-          <span class="link-btn__text">YouTube</span>
-        </a>
-        <a href="https://github.com/niwanotorico" class="link-btn" target="_blank" rel="noopener">
-          <span class="link-btn__icon">&#x1F419;</span>
-          <span class="link-btn__text">GitHub</span>
-        </a>
-        <a href="#" class="link-btn">
-          <span class="link-btn__icon">&#x2709;</span>
-          <span class="link-btn__text">おたより</span>
-        </a>
+        <a href="#" class="link-btn"><span class="link-btn__icon">&#x1F426;</span><span>X (Twitter)</span></a>
+        <a href="#" class="link-btn"><span class="link-btn__icon">&#x1F4FA;</span><span>YouTube</span></a>
+        <a href="https://github.com/niwanotorico" class="link-btn" target="_blank" rel="noopener"><span class="link-btn__icon">&#x1F419;</span><span>GitHub</span></a>
+        <a href="#" class="link-btn"><span class="link-btn__icon">&#x2709;</span><span>おたより</span></a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <img src="images/ぴよみ.png" alt="" class="footer-char" aria-hidden="true">
+    <img src="images/LINE_stamp/24.png" alt="" class="footer-char" aria-hidden="true">
     <p class="footer-text">&copy; 2026 ちきとぴよ / niwanotorico</p>
     <p class="footer-sub">All characters and illustrations by niwanotorico.</p>
   </footer>

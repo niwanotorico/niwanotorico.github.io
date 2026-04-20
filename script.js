@@ -135,7 +135,7 @@ document.addEventListener('keydown', function (e) {
 // Scroll fade-in animations
 // ==========================================
 const fadeTargets = document.querySelectorAll(
-  '.character-card, .gallery-item, .book-card, .world-text, .world-keywords, .world-motifs, .link-btn'
+  '.char-card, .gallery-item, .book-card, .world-text, .world-keywords, .world-motifs, .link-btn'
 );
 
 fadeTargets.forEach(el => el.classList.add('fade-in'));
