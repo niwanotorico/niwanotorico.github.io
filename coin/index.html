@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>チキン・コイン・ミッション | ちきんだより</title>
-    <meta name="description" content="赤羽の片すみで始まった、家の中でまわすミッションコインのしくみ。宿題、お手伝い、ガチャ、鳥家族の暮らしの記録。" />
+    <title>コインミッション | ちきんだより</title>
+    <meta name="description" content="子どものガチャ好きを逆手にとった、家庭内ごほうび経済圏の実験記録。宿題もお手伝いも、コインとガチャでまわす。赤羽の鳥家族の暮らしのログ。" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -15,39 +15,48 @@
       </a>
       <nav class="nav" aria-label="ページ内ナビゲーション">
         <a href="#about">これはなに</a>
-        <a href="#family">メンバー</a>
+        <a href="#system">しくみ</a>
         <a href="#days">ある日</a>
-        <a href="#logs">ログ</a>
-        <a href="#made">道具と作品</a>
+        <a href="#result">やってみたら</a>
+        <a href="#articles">記事</a>
       </nav>
     </header>
 
     <main id="top">
+      <!-- ヒーロー：初見の人が「うちでもやってみたい」と思う入口 -->
       <section class="hero">
         <div class="hero-inner">
-          <p class="kicker">chicken coin mission</p>
+          <p class="kicker">coin mission</p>
           <h1>やること、<br />やったら、<br />コイン。</h1>
           <p class="lead">
-            赤羽の片すみで始まった、家族のごほうび実験。<br />
-            宿題も、お手伝いも、たまにガチャも。これは「チキン・コイン・ミッション」の記録です。
+            子どものガチャ好きを逆手にとった、<br />
+            <b>家庭で育てる、小さなゲーム。</b>
           </p>
-          <div class="hero-note">
-            <img src="./assets/chikin_tablet_work.png" alt="タブレットで記録するちきん" />
-            <p>家の中でまわす「ミッションコイン」のしくみを、暮らしのログとして残しています。</p>
+          <p class="hero-sub">
+            宿題も、お手伝いも、たまにガチャも。使うのはコインとカードだけ。
+            特別な道具はいらない、家の中で今日から始められるしくみです。
+          </p>
+          <div class="hero-cta">
+            <a class="btn-primary" href="#system">しくみを見る</a>
+            <a class="btn-ghost" href="#articles">記事を読む</a>
           </div>
         </div>
         <div class="hero-art">
-          <img src="./assets/hero-kitchen.png" alt="キッチンで朝食とコーヒーを用意する鳥家族" />
+          <img src="./assets/hero-cards.jpg" alt="実際に使っているミッションカードとコイン" />
+          <span class="hero-art-caption">実際に使っているカードとコイン</span>
         </div>
       </section>
 
+      <!-- これはなに：共感でつかむ -->
       <section class="intro" id="about">
         <div class="intro-copy">
           <p class="kicker">about</p>
           <h2>家庭の中に、<br />小さなゲームを置いてみた。</h2>
           <p>
-            チキン・コイン・ミッションは、家の中でまわす「ミッションコイン」のしくみです。
-            子どもとの毎日をちょっとだけゲームにして、うまくいった日も、ぐだぐだの日も、ぜんぶ含めて「暮らしの制作ログ」として残しています。
+            「宿題やって」「お手伝いして」が、毎日ちょっとした戦いになる。
+            それなら、いっそゲームにしてしまおう——。
+            コインミッションは、家の中でまわす、コインとガチャのしくみです。
+            うまくいった日も、ぐだぐだの日も、ぜんぶ含めて暮らしのログとして残しています。
           </p>
         </div>
         <a class="quote-card" href="https://note.com/akabane_chicken/n/n15da97d4a27a" target="_blank" rel="noopener">
@@ -56,34 +65,55 @@
         </a>
       </section>
 
-      <section class="family" id="family">
+      <!-- しくみ：かんたんそう＝やってみたい -->
+      <section class="system" id="system">
         <div class="section-heading">
-          <p class="kicker">family</p>
-          <h2>鳥家族のメンバー</h2>
+          <p class="kicker">how it works</p>
+          <h2>やることは、<br />これだけ。</h2>
+          <p>
+            やることをこなすとコインがたまり、ガチャやごほうびに変わっていく。
+            家の中だけで完結する、シンプルな流れです。
+          </p>
         </div>
-        <div class="cast-grid">
-          <article>
-            <img src="./assets/chikin_tablet_work.png" alt="タブレットで記録するちきん" />
-            <h3>ちきん</h3>
-            <p>赤羽の片すみで、思いついた仕組みをすぐ試す親鳥。実験と寄り道がいきがい。</p>
-          </article>
-          <article>
-            <img src="./assets/piyokichi_game_console.png" alt="ゲームをするぴよきち" />
-            <h3>ぴよきち</h3>
-            <p>納得できるルールには強い。ゲームと討伐が好き。</p>
-          </article>
-          <article>
-            <img src="./assets/piyomi_piano.png" alt="ピアノを弾くぴよみ" />
-            <h3>ぴよみ</h3>
-            <p>かわいいものへの反応が速い。楽しいことと収集に強い。</p>
-          </article>
+        <div class="flow" aria-label="コインミッションの全体図">
+          <div class="flow-layer">
+            <span class="flow-tag">1. かせぐ</span>
+            <div class="flow-row">
+              <div class="flow-step">ベースミッション<small>宿題・お手伝い</small></div>
+              <span class="flow-arrow" aria-hidden="true">→</span>
+              <div class="flow-step flow-step--green">緑コイン</div>
+            </div>
+          </div>
+          <div class="flow-layer">
+            <span class="flow-tag">2. まわす</span>
+            <div class="flow-row">
+              <div class="flow-step flow-step--green">緑コイン</div>
+              <span class="flow-arrow" aria-hidden="true">→</span>
+              <div class="flow-step">トランプガチャ</div>
+              <span class="flow-arrow" aria-hidden="true">→</span>
+              <div class="flow-step">CCP</div>
+            </div>
+          </div>
+          <div class="flow-layer">
+            <span class="flow-tag">3. ごほうび</span>
+            <div class="flow-row">
+              <div class="flow-step">CCP</div>
+              <span class="flow-arrow" aria-hidden="true">→</span>
+              <div class="flow-step flow-step--reward">ママガチャ</div>
+            </div>
+          </div>
+        </div>
+        <div class="flow-note">
+          <strong>生活ポイント</strong>
+          <p>暮らしそのものもポイントに。<b>チキンコイン 4枚 ＝ ガチャ 1回</b>。</p>
         </div>
       </section>
 
+      <!-- ある日：具体的な一日で「こんな感じか」を見せる -->
       <section class="day-flow" id="days">
         <div class="section-heading">
           <p class="kicker">days</p>
-          <h2>チキン・コイン・ミッションのある日。</h2>
+          <h2>ミッションのある日。</h2>
         </div>
         <div class="day-grid">
           <article class="day-card">
@@ -113,26 +143,12 @@
         </div>
       </section>
 
-      <section class="scene">
-        <img src="./assets/living-study.png" alt="リビングで過ごす鳥家族" />
-        <div class="scene-copy">
-          <p class="kicker">keep it light</p>
-          <h2>続かない日も、<br />ログにする。</h2>
-          <p>
-            うまく回った日だけじゃなく、なんとなく止まった日も残しておく。
-            あとから見返すと、そこにもちゃんと暮らしの癖がある。
-          </p>
-        </div>
-      </section>
-
-      <section class="logs" id="logs">
+      <!-- やってみたら：正直な結果で信頼させ、ハードルを下げる -->
+      <section class="logs" id="result">
         <div class="section-heading">
-          <p class="kicker">lifelog</p>
-          <h2>まわしてみたら、<br />見えてきたこと。</h2>
-          <p>
-            手書きのミッションシート、コイン、ガチャ、思いつきの報酬。
-            ちゃんと続いた日も、急に崩れた日も、あとから見返すと小さな発見になる。
-          </p>
+          <p class="kicker">honest log</p>
+          <h2>やってみたら、<br />こうなった。</h2>
+          <p>きれいごとだけじゃなく、うまくいかなかった月も、そのまま残しています。</p>
         </div>
         <article class="log-feature">
           <div class="log-feature-copy">
@@ -140,7 +156,8 @@
             <h3>達成率は下がった。<br />でも、失敗じゃなかった。</h3>
             <p>
               4月87%、5月77%、6月69%。数字だけ見ると、きれいな右肩下がり。
-              でもログを見返すと、子どもが「飽きた」というより、予定が多い日・イベント翌日・親が運用しきれない日に落ちやすいことが見えてきました。
+              でも中身を見返すと、「飽きた」というより、予定が多い日・イベント翌日に落ちやすいだけ。
+              完璧を目指さなくても回る——それが分かっただけでも、続ける価値がありました。
             </p>
             <div class="rate-board" aria-label="3か月の達成率">
               <div><strong>87%</strong><span>4月</span></div>
@@ -149,115 +166,110 @@
             </div>
             <div class="log-actions">
               <a class="log-link" href="https://note.com/akabane_chicken/n/n3e1efaa824c0" target="_blank" rel="noopener">3か月レビューをnoteで読む</a>
-              <a class="log-link log-link--sub" href="https://note.com/akabane_chicken/n/n15da97d4a27a" target="_blank" rel="noopener">はじまりの記事</a>
             </div>
           </div>
           <img src="./assets/log-note-cover.png" alt="達成率の推移を表した記事のカバー画像" />
         </article>
-        <div class="insight-grid" aria-label="3か月レビューの要点">
+        <div class="insight-grid" aria-label="やってみて分かったこと">
           <article>
             <span>1</span>
             <h3>下がったのは、やる気だけじゃない</h3>
-            <p>達成率が落ちた日は、予定が詰まった日やイベント後に集中。仕組みそのものより、生活リズムとの相性が大きかった。</p>
+            <p>達成率が落ちた日は、予定が詰まった日やイベント後に集中。仕組みより、生活リズムとの相性が大きかった。</p>
           </article>
           <article>
             <span>2</span>
-            <h3>親の運用コストも、ちゃんと壁になる</h3>
-            <p>毎日ミッションを考えて、記録して、声をかける。子どもより先に、親の手間がボトルネックになる場面もあった。</p>
+            <h3>親の手間も、ちゃんと壁になる</h3>
+            <p>毎日ミッションを考えて、記録して、声をかける。子どもより先に、親の手間がボトルネックになる場面も。</p>
           </article>
           <article>
             <span>3</span>
             <h3>報酬は「買う」から「作る」へ</h3>
-            <p>3Dプリンタが来て、手探りガチャや小さな自作品が報酬に。ごほうびが、家族で作る遊びに変わっていった。</p>
+            <p>手探りガチャや小さな自作品が報酬に。ごほうびが、家族で作る遊びに変わっていった。</p>
           </article>
           <article>
             <span>4</span>
-            <h3>次は、完璧よりリカバリー</h3>
-            <p>毎日100点を目指すより、崩れたあと戻れる設計へ。休む日も、選べる日も、最初から仕組みに入れておく。</p>
-          </article>
-        </div>
-        <div class="log-grid">
-          <article>
-            <img src="./assets/log-mission-sheet.png" alt="手書きのミッションシート" />
-            <h3>手書きが、そのままデータに</h3>
-            <p>毎日の小さな丸バツが、あとから見ると家族の攻略ログになっていく。</p>
-          </article>
-          <article>
-            <img src="./assets/log-reward-cards.png" alt="鳥キャラクター入りの報酬チケット" />
-            <h3>報酬も、ちょっと進化</h3>
-            <p>現金でもお菓子でもなく、ルールに触れる権利や選べる楽しさを混ぜてみる。</p>
-          </article>
-          <article>
-            <img src="./assets/log-mama-gacha.png" alt="中身が見えないママガチャの箱" />
-            <h3>5月末、3Dプリンタが来た</h3>
-            <p>ここから報酬が「買うもの」だけじゃなく、家で作れるものに変わっていく。</p>
-          </article>
-          <article>
-            <img src="./assets/log-toy-figures.png" alt="3Dプリンターで作った小さなフィギュア" />
-            <h3>人気者は、いつも予想外</h3>
-            <p>手探りガチャの中身も自作に。小さな造形が、いちばん盛り上がる日もある。</p>
+            <h3>完璧より、リカバリー</h3>
+            <p>毎日100点より、崩れたあと戻れる設計へ。休む日も、選べる日も、最初から仕組みに入れておく。</p>
           </article>
         </div>
       </section>
 
-      <section class="made" id="made">
+      <!-- 家族：このゲームを育てている家族。人柄が自然ににじむ紹介にする -->
+      <section class="family" id="family">
         <div class="section-heading">
-          <p class="kicker">tools & made</p>
-          <h2>道具と、家で生まれたもの。</h2>
+          <p class="kicker">the family behind it</p>
+          <h2>赤羽で暮らす、<br />鳥家族。</h2>
+          <p>
+            専門家でも、教育のプロでもありません。このゲームは、この3羽の毎日の中で、少しずつ育っています。
+          </p>
         </div>
-        <div class="made-layout">
-          <img class="coin-art" src="./assets/log-mama-gacha.png" alt="中身が見えない手探りガチャの箱" />
-          <div class="made-list">
-            <article>
-              <h3>コイン</h3>
-              <p>ラスベガスで買ってきたコインを、家庭内トークンとして転用。青、赤、緑、白の色に役割を持たせた。</p>
-            </article>
-            <article>
-              <h3>ミッションシート</h3>
-              <p>宿題やお手伝いを、今日の候補として並べるための記録用紙。続いた日も、止まった日もログになる。</p>
-            </article>
-            <article>
-              <h3>手探りガチャ</h3>
-              <p>5月末の3Dプリンタ導入後に生まれた、箱の中から小さな自作品を引く遊び。</p>
-            </article>
-            <article>
-              <h3>3Dプリンタ作品</h3>
-              <p>報酬が「買うもの」だけじゃなく、家で作れるものに変わっていくきっかけになった小さな造形たち。</p>
-            </article>
-            <article>
-              <h3>鳥家族の素材</h3>
-              <p>ページ、日記、シール、案内役として登場するキャラクター素材。暮らしの記録を少し楽しくするための存在。</p>
-            </article>
+        <div class="cast-grid">
+          <article>
+            <img src="./assets/chikin_tablet_work.png" alt="タブレットで記録するちきん" />
+            <h3>ちきん</h3>
+            <p>実験と寄り道がいきがい。思いつくと、まず家で試してみる。小学生のぴよこたちに振り回されたり、振り回したりしている。</p>
+          </article>
+          <article>
+            <img src="./assets/piyokichi_game_console.png" alt="ゲームをするぴよきち" />
+            <h3>ぴよきち</h3>
+            <p>納得できないルールには、ちゃんと「おかしい」と言う。その一言で、このゲームは何度もつくり直されてきた。ゲームと討伐が好き。</p>
+          </article>
+          <article>
+            <img src="./assets/piyomi_piano.png" alt="ピアノを弾くぴよみ" />
+            <h3>ぴよみ</h3>
+            <p>ガチャをまわす前が、いちばん真剣。かわいいものと集めることが好きで、今日のごほうびを誰より楽しみにしている。</p>
+          </article>
+        </div>
+
+        <div class="daily-strip">
+          <p class="daily-lead">このゲームを育てているうちに、<br />気づけば、こんな日常になっていました。</p>
+          <div class="daily-chips" aria-label="わが家の日常">
+            <span>家庭内のコイン制度</span>
+            <span>オリジナルのガチャ</span>
+            <span>3Dプリンタで景品づくり</span>
+            <span>VRのある暮らし</span>
+            <span>データを取りながら改善</span>
           </div>
         </div>
       </section>
 
-      <section class="journal journal--quiet">
-        <div>
-          <p class="kicker">journal</p>
-          <h2>読めるように、残していく。</h2>
-          <p>
-            家の中で生まれた小さな発明、会話、失敗、うまくいった日。
-            あとから読み返せるように、ちょっとかわいく保存しておく。
-          </p>
+      <!-- 記事：もっと知りたい人の行き先 -->
+      <section class="articles" id="articles">
+        <div class="section-heading">
+          <p class="kicker">notes</p>
+          <h2>もっと読む。</h2>
+          <p>始め方も、3か月やってみた本音も、noteに書いています。</p>
         </div>
-        <img src="./assets/mixed_writing.png" alt="書きものをするひよこ" />
+        <div class="article-grid article-grid--duo">
+          <a class="article-card" href="https://note.com/akabane_chicken/n/n15da97d4a27a" target="_blank" rel="noopener">
+            <span class="article-tag">はじまり</span>
+            <h3>コインミッション、はじめました</h3>
+            <p>2026年4月、家庭内のごほうび制度を導入した話。しくみの原型はここから。</p>
+            <span class="article-more">noteで読む →</span>
+          </a>
+          <a class="article-card" href="https://note.com/akabane_chicken/n/n3e1efaa824c0" target="_blank" rel="noopener">
+            <span class="article-tag">3か月レビュー</span>
+            <h3>達成率は下がった。でも、失敗じゃなかった。</h3>
+            <p>4月87%→6月69%。きれいな右肩下がりの数字の裏で、見えてきたこと。</p>
+            <span class="article-more">noteで読む →</span>
+          </a>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="footer-brand">
-        <span class="brand-mark">ち</span>
-        <div>
-          <strong>ちきんだより</strong>
-          <p>赤羽の片すみから、チキン・コイン・ミッションを、ゆるゆる記録中。</p>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="brand-mark">ち</span>
+          <div>
+            <strong>ちきんだより</strong>
+            <p>赤羽の片すみから、コインミッションを、ゆるゆる記録中。</p>
+          </div>
         </div>
-      </div>
-      <div class="footer-links" aria-label="関連リンク">
-        <a href="#logs">実験ログ</a>
-        <a href="#made">道具と作品</a>
-        <a href="https://note.com/akabane_chicken/n/n3e1efaa824c0" target="_blank" rel="noopener">3か月レビュー</a>
-        <a href="https://note.com/akabane_chicken/n/n15da97d4a27a" target="_blank" rel="noopener">はじまりの記事</a>
+        <div class="footer-links" aria-label="関連リンク・SNS">
+          <a href="https://x.com/niwatori_VR" target="_blank" rel="noopener">X ／ @niwatori_VR</a>
+          <a href="https://note.com/akabane_chicken" target="_blank" rel="noopener">note ／ akabane_chicken</a>
+        </div>
       </div>
     </footer>
   </body>
