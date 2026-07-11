@@ -918,6 +918,16 @@ p {
   color: var(--ink);
 }
 
+.flow-step--redblue {
+  background: linear-gradient(100deg, #f4a89e 0 50%, #a9d2e8 50% 100%);
+}
+
+.flow-plus {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--ink);
+}
+
 .flow-step--reward {
   background: var(--orange);
 }
@@ -1082,6 +1092,11 @@ a.article-card:hover {
   .flow-arrow {
     align-self: center;
     transform: rotate(90deg);
+  }
+
+  .flow-plus {
+    align-self: center;
+    text-align: center;
   }
 
   .article-grid {
